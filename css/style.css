@@ -1,0 +1,1481 @@
+/* ============= Custom font =============== */
+@font-face {
+    font-family: "Avenir-Black";
+    src: url("../fonts/AvenirLTStd-Black.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir-Book";
+    src: url("../fonts/AvenirLTStd-Book.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir-Mediumn";
+    src: url("../fonts/AvenirLTStd-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, button, input, select, textarea{
+    color: #fff;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Avenir-Book", arial;
+    color: #353535;
+    overflow-x: hidden;
+}
+.content{
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.container{
+	padding: 0;
+}
+.container-fluid {
+	padding: 0;
+}
+@media (min-width: 640px){
+	.container{
+		padding:0 15px;
+	}
+}
+.row{
+	margin: 30px 0;
+}
+@media (min-width: 480px){
+	.row{
+		margin: 60px 0;
+	}	
+}
+table{
+	margin:0 auto;
+}
+table tr td{
+	padding: 0 5px;
+}
+h3{
+	font-family: "Avenir-Black", arial;
+	font-size: 40px;
+	color: #353535;
+	text-transform: uppercase;
+	margin: 0 0 25px 0;
+}
+.text{
+	font-family: "Avenir-Book", arial;
+	font-size: 24px;
+	line-height: 1.35;
+	color: #353535;
+	margin: 0 auto;
+	width: 75%;
+}
+h4{
+	font-family: "Avenir-Black", arial;
+	color: #353535;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 25px;
+}
+.desc{
+	font-family: "Avenir-Book", arial;
+	color: #565961;
+	text-align: left;
+	font-size: 24px;
+	line-height: 1.35;
+}
+.source{
+	color: #c6ceda;
+	font-size: 12px;
+	font-family: "Avenir-Black", arial;
+	text-align: left;
+	text-transform: uppercase;
+}
+hr{
+	width: 120%;
+	border-bottom: 1px solid #D4D6DB;
+	border-top: 0px none;
+	margin-left: -20px;
+	overflow-x: hidden;
+}
+hr.small{
+	width: 15%;
+	border-bottom: 2px solid #eaeff6;
+	margin: 30px 0;
+}
+/* ============== Menu =================== */
+#menu{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 100;
+	width: 300px;
+	height: 100%;
+	background: #1d2738;
+	overflow-y: scroll;
+}
+.top{
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	margin-bottom: 40px;
+	clear: both;
+}
+.close-btn{
+	margin: 30px 10px 0 0;
+	float: right;
+}
+.close-btn .close-x{
+	opacity: 0.8;
+	cursor: pointer;
+}
+.close-btn .close-x:hover{
+	opacity: 1;
+}
+.nav-menu{
+	float: left;
+	display: block;
+	width: 100%;
+	text-align: left;
+	clear: both;
+}
+.nav-menu .menu-items{
+	list-style: none;
+	padding: 0;
+	margin-left: 30px;
+	font-family: "Avenir-Mediumn", arial;
+	margin-bottom: 30px;
+}
+.nav-menu .menu-items .menu-item{
+	color: #a4b3c2;
+	font-size: 1.5em;
+	line-height: 2;
+}
+.nav-menu .menu-items .menu-item:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.nav-menu .menu-items .menu-header{
+	font-family: "Avenir-Black", arial;
+	text-transform: uppercase;
+	color: #395166;
+	font-size: 2em;
+	line-height: 2;
+}
+.nav-menu .menu-items .menu-header:hover{
+	text-decoration: none;
+	color: #395166;
+}
+.subscribe-form{
+	text-align: left;
+	margin-left: 30px;
+	font-family: "Avenir-Mediumn", arial;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+.email{
+	color: #545b68;
+	display: block;
+	width: 240px;
+	height: 40px;
+	padding: 10px 12px;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	margin-bottom: 10px;
+}
+.submit{
+	color: #fff;
+	display: inline-block;
+	width: 240px;
+	font-size: 16px;
+	line-height: 40px;
+	height: 40px;
+	background-color: #458ef3;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-family: "Avenir-Black", arial;
+	text-transform: uppercase;
+	padding-top: 1px;
+	transition: all 0.2s linear;
+}
+.submit:hover {
+	background-color: #609ef3;
+}
+.subscribe-text {
+	color: #fff;
+}
+
+body.has-active-menu {
+  overflow: hidden;
+}
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+  -webkit-transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+}
+
+#menu{
+	transform: translateX(300px);
+	-ms-transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+	z-index: 200;  
+	-webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+#menu.is-active{
+	transform: translateX(0);
+	-ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.content.has-push-right{
+	transform: translateX(-300px);
+	-ms-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+}
+
+/* ========== Share Icons ============ */
+.share-items{
+	list-style: none;
+	position: fixed;
+	right: 12px;
+	padding: 0;
+	z-index: 999;
+	bottom: 60px;
+	cursor: pointer;
+}
+.share-item{
+	display: block;
+	margin-bottom: 10px;
+	display: none;
+	transition: all 0.2s linear;
+}
+@media (min-width: 992px){
+	.share-items{
+		top: 50%;
+		margin-top: -100px;
+		bottom: auto;
+	}
+	.share-item{
+		display: block;
+	}
+	.share-trigger{
+		display: none;
+	}
+}
+.share-link{
+	width: 60px;
+	height: 60px;
+	line-height: 56px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	transition: all 0.2s linear;
+	display: inline-block;
+	position: relative;
+}
+.share-trigger{
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	transition: all 0.2s linear;
+	line-height: 60px;
+	vertical-align: middle;
+	background: #aaa;
+	opacity: 0.7;
+	position: fixed;
+	right: 12px;
+	bottom: 10px;
+	z-index: 9999;
+}
+.share-link:hover{
+	color: #fff;
+    background-color: #0071df;
+}
+.share-link:active {
+    background-color: #0028ae
+}
+.share--link:focus {
+    color: #fff
+}
+.share-link-fb {
+    background-color: #46629e
+}
+.share-link-fb:hover {
+    background-color: #5f7bb8
+}
+.share-link-fb:active {
+    background-color: #364c7b
+}
+.share-link-li {
+    background-color: #076bb4
+}
+.share-link-li:hover {
+    background-color: #0988e5
+}
+.share-link-li:active {
+    background-color: #054e83
+}
+.share-link-tw {
+    background-color: #44b9f0
+}
+.share-link-tw:hover {
+    background-color: #73cbf4
+}
+.share-link-tw:active {
+    background-color: #15a7ec
+}
+.share-link .fa{
+	line-height: 1;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.labels{
+	margin: 30px auto 0 auto;
+	text-align: left;
+}
+.label{
+	display: inline-block; 
+	text-align: left; 
+	margin-bottom: 5px;
+	margin-right: 30px;
+}
+.label-table{
+	display: table;
+}
+.label-row{
+	display: table-row;
+}
+.label-cell{
+	display: table-cell;
+	font-size: 16px; 
+	line-height: 20px; 
+	vertical-align: middle;
+}
+.img-tick{
+	width: 20px;
+	height: 20px;
+	margin-right: 7.5px;
+}
+.img-circle{
+	width: 15px; 
+	height: 15px;
+	margin-right: 10px;
+	margin-left: 2.5px;
+}
+.circle-desc{
+	text-transform: uppercase;
+	margin-left: 5px;
+	font-family: "Avenir-Book", arial;
+	color: #93969b;
+	font-size: 14px;
+}
+.label-number {
+	font-family: "Avenir-Mediumn", arial;
+	font-size: 22px;
+	position: absolute;
+	opacity: 0;
+}
+/* ============== Home Section =========== */
+#home{
+	float: left;
+	display: block;
+	background: url("../images/full_back.jpg");
+    background-attachment: relative;
+    min-height: 635px;
+    width: 100%;
+    background-size: 100%;
+    text-align: center;
+}
+#home .container-fluid{
+	
+}
+.top-logo{
+	margin: 30px 0px 0 30px;
+	float: left;
+	text-decoration: none;
+}
+
+.logo{
+	width: 30px;
+	height: 30px;
+}
+.caption{
+	font-size: 3em;
+	vertical-align: middle;
+	color: #fff;
+	font-family: "Avenir-Mediumn", arial;
+	margin-left: 10px;
+}
+@media (min-width: 768px){
+	.logo{
+		width: 50px;
+		height: 50px;
+	}
+	.caption{
+		font-size: 4em;
+	}
+}
+
+.hamburger{
+	position: fixed;
+	right: 0;
+	margin: 30px 15px 0 0;
+	z-index: 9999;
+}
+.hamburger .fa-bars{
+	padding: 15px;
+	background-color: #458ef3;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	transition: all 0.2s linear;
+}
+.hamburger .fa-bars:hover {
+	background-color: #609ef3;
+}
+.hamburger a{
+	font-size: 3em;
+	color: #fff;
+}
+.banner{
+	margin-top: 160px;
+	text-align: center;
+}
+.banner .title{
+	font-family: "Avenir-Black", arial;
+	font-size: 70px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.banner .subtitle{
+	font-family: "Avenir-Book", arial;
+	font-size: 36px;
+	color: #ffffff;
+}
+.banner .blue{
+	color: #458ef3;
+}
+.banner .white{
+	color: #fff;
+}
+
+.entertainment-mark{
+	position: absolute;
+	display: inline-block;
+	width: 400px;
+	margin-top: 40px;
+	margin-left: -200px;
+	left: 50%;
+}
+
+/* ======= Travel Digital Ad Spending ======== */
+#digital{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 700px;
+	text-align: center;
+	background-color: #fff;
+}
+
+/* ------- Ad Industry Chart ------- */
+.industry-wrapper {
+	position: relative;
+	display: block;
+	margin-top: 135px;
+}
+.ad-industry {
+	position: relative;
+	display: block;
+}
+#adIndustryChart{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.industry-labels {
+	margin-left: 50px;
+}
+.industry-label-number-1 {
+	color: #458ef3;
+	top: 0;
+	left: 50%;
+	margin-left: -175px;
+	margin-top: 85px;
+}
+.industry-label-number-2 {
+	color: #526b82;
+	top: 0;
+	left: 50%;
+	margin-left: -117px;
+	margin-top: 30px;
+}
+.industry-label-number-3 {
+	color: #d7e0e8;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: 7px;
+}
+.industry-label-number-4 {
+	color: #ed3990;
+	top: 0;
+	left: 50%;
+	margin-left: 95px;
+	margin-top: 35px;
+}
+.industry-label-number-5 {
+	color: #efd246;
+	top: 50%;
+	left: 50%;
+	margin-left: 165px;
+	margin-top: 10px;
+}
+.industry-label-number-6 {
+	color: #ee9040;
+	bottom: 0;
+	left: 50%;
+	margin-left: 85px;
+	margin-bottom: 25px;
+}
+.industry-label-number-7 {
+	color: #96ca39;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+	margin-bottom: 0px;
+}
+.industry-label-number-8 {
+	color: #24a192;
+	bottom: 0;
+	left: 50%;
+	margin-left: -145px;
+	margin-bottom: 30px;
+}
+.industry-label-number-9 {
+	color: #49b7ea;
+	top: 50%;
+	left: 50%;
+	margin-left: -205px;
+	margin-top: 40px;
+	font-size: 28px;
+}
+.industry-label-number-10 {
+	color: #a66bda;
+	top: 50%;
+	left: 50%;
+	margin-left: -208px;
+	margin-top: -40px;
+	font-size: 28px;
+}
+
+/*------- Ad spending by format --------*/
+.format-media, .format-entertainment{
+	position: relative;
+	display: block;
+}
+#formatMediaChart, #formatEntertainChart{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.fmedia-label-number-1 {
+	color: #96ca39;
+	top: 50%;
+	left: 50%;
+	margin-left: -225px;
+}
+.fmedia-label-number-2 {
+	color: #efd246;
+	top: 10px;
+    left: 50%;
+    margin-left: -70px;
+}
+.fmedia-label-number-3 {
+	color: #458ef3;
+	top: 10px;
+	left: 50%;
+	margin-left: 130px;
+	margin-top: 60px;
+}
+.fmedia-label-number-4 {
+	color: #ed3990;
+	bottom: 0;
+	left: 50%;
+	margin-left: 110px;
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+
+.fentertain-label-number-1 {
+	color: #96ca39;
+	top: 50%;
+	left: 50%;
+	margin-left: -210px;
+	margin-top: -80px;
+}
+.fentertain-label-number-2 {
+	color: #efd246;
+	top: 10px;
+	left: 50%;
+	margin-left: -50px;
+}
+.fentertain-label-number-3 {
+	color: #458ef3;
+	top: 50%;
+	left: 50%;
+	margin-left: 170px;
+	margin-top: -30px;
+}
+.fentertain-label-number-4 {
+	color: #ed3990;
+	bottom: 0;
+	left: 50%;
+	margin-left: -120px;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+/*------- Digital Ad Spending by Objective --------*/
+.obj-media, .obj-entertainment{
+	position: relative;
+	display: block;
+}
+#objMediaChart, #objEntertainChart{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.donut-label{
+	display: inline-block;
+	color: #353535;
+	text-align: left;
+}
+.donut-label-1{
+	margin-right: 10px;
+}
+.donut-table{
+	margin: 0 auto;
+}
+.donut-table .donut-score{
+	font-family: "Avenir-Black", arial;
+	font-size: 2em;
+	padding-left: 10px;
+}
+.donut-table .donut-text{
+	font-family: "Avenir-Book", arial;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #93969b;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.donut-table .img-circle{
+	width: 15px;
+	height: 15px;
+	margin-right: -3px;
+}
+
+.objmedia-label-number-1 {
+	color: #458ef3;
+	top: 50%;
+	left: 50%;
+	margin-left: 170px;
+	margin-top: -15px;
+	font-size: 28px;
+}
+.objmedia-label-number-2 {
+	color: #efd246;
+	top: 50%;
+    left: 50%;
+    margin-left: -205px;
+    margin-top: -15px;
+}
+.objentertain-label-number-1 {
+	color: #96ca39;
+	top: 50%;
+	left: 50%;
+	margin-left: 170px;
+	margin-top: -15px;
+}
+.objentertain-label-number-2 {
+	color: #ed3990;
+	top: 50%;
+    left: 50%;
+    margin-left: -215px;
+    margin-top: -15px;
+    font-size: 28px;
+}
+
+
+/*------- Digital Ad Spending by Device --------*/
+.device-media, .device-entertainment{
+	position: relative;
+	display: block;
+}
+#deviceMediaChart, #deviceEntertainChart{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.devicemedia-label-number-1 {
+	color: #ee9040;
+	top: 50%;
+	left: 50%;
+	margin-left: 170px;
+	margin-top: -15px;
+}
+.devicemedia-label-number-2 {
+	color: #458ef3;
+	top: 50%;
+    left: 50%;
+    margin-left: -215px;
+    margin-top: -15px;
+    font-size: 28px;
+}
+.deviceentertain-label-number-1 {
+	color: #458ef3;
+	top: 50%;
+	left: 50%;
+	margin-left: 170px;
+	margin-top: -15px;
+}
+.deviceentertain-label-number-2 {
+	color: #49b7ea;
+	top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -15px;
+    font-size: 28px;
+}
+
+
+/* ======= More about Mobile ======= */
+#more{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 700px;
+	text-align: center;
+	background-color: #fff;
+}
+/* ------ Ad Spending by Category ----- */
+.category-entertainment{
+	position: relative;
+	display: block;
+}
+.category-wrapper {
+	display: block;
+	position: relative;
+	margin-top: 100px;
+}
+#categoryEntertainChart{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.centertain-label-number-1 {
+	color: #458ef3;
+	top: 50%;
+	left: 50%;
+	margin-left: 170px;
+	margin-top: -30px;
+}
+.centertain-label-number-2 {
+	color: #efd246;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -40px;
+}
+.centertain-label-number-3 {
+	color: #ee9040;
+	top: 50%;
+	left: 50%;
+	margin-left: -210px;
+	margin-top: -10px;
+}
+.centertain-label-number-4 {
+	color: #ed3990;
+	top: 30px;
+	left: 50%;
+	margin-left: -100px;
+}
+.rate-wrapper {
+	display: block;
+	position: relative;
+	margin-top: 50px;
+}
+.completion-wrapper {
+	display: block;
+	position: relative;
+}
+.completion-color {
+	display: block;
+	background: url("../images/completion-color.png") no-repeat;
+	bottom: 0px;
+	height: 0;
+	width: 400px;
+	position: absolute;
+	background-position: center bottom;
+	background-size: cover;
+	z-index: 200;
+	left: 50%;
+	margin-left: -200px;
+}
+.completion-solid {
+	display: block;
+	background: url("../images/completion-solid.png") no-repeat;
+	height: 224px;
+	width: 400px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+	margin: 0 auto;
+}
+.completion-value {
+	font-family: "Avenir-Black", arial;
+    font-size: 64px;
+    line-height: 64px;
+    height: 64px;
+    width: 100%;
+    text-align: center;
+    color: #e8eaed;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.completion-value sup {
+	font-size: 0.5em;
+	top: -1em;
+}
+
+/* ======= Media Consumption is Changing ======= */
+#consumption {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 700px;
+	text-align: center;
+	background-color: #fff;
+}
+.view-wrapper {
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+}
+.digital-wrapper {
+	position: relative;
+	display: block;
+}
+.desktop-color {
+	display: block;
+	background: url("../images/desktop-color.jpg") no-repeat;
+	bottom: 0px;
+	height: 0;
+	width: 250px;
+	position: absolute;
+	background-position: center bottom;
+	background-size: cover;
+	z-index: 200;
+}
+.desktop-solid {
+	display: block;
+	background: url("../images/desktop-solid.jpg") no-repeat;
+	height: 187px;
+	width: 250px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+}
+.green-label {
+    position: relative;
+    color: #fff;
+    font-family: "Avenir-Black", arial;
+    font-size: 18px;
+    background: #96cd2b;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 3px 0 3px;
+    line-height: 1;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+.minute-label {
+	position: relative;
+	font-family: "Avenir-Mediumn", arial;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	color: #353535;
+	margin-top:10px;
+}
+.ipad-color {
+	display: block;
+	background: url("../images/ipad-color.jpg") no-repeat;
+	bottom: 0px;
+	height: 0;
+	width: 110px;
+	position: absolute;
+	background-position: center bottom;
+	background-size: cover;
+	z-index: 200;
+}
+.ipad-solid {
+	display: block;
+	background: url("../images/ipad-solid.jpg") no-repeat;
+	height: 161px;
+	width: 110px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+}
+.iphone-color {
+	display: block;
+	background: url("../images/iphone-color.jpg") no-repeat;
+	bottom: 0px;
+	height: 0;
+	width: 60px;
+	position: absolute;
+	background-position: center bottom;
+	background-size: cover;
+	z-index: 200;
+}
+.iphone-solid {
+	display: block;
+	background: url("../images/iphone-solid.jpg") no-repeat;
+	height: 117px;
+	width: 60px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+}
+.original-wrapper {
+	position: relative;
+	display: block;
+	margin-top: 40px;
+}
+.scale-wrapper {
+	position: relative;
+	display: block;
+}
+.scale {
+	display: block;
+	background: url("../images/scale.png") no-repeat;
+	height: 150px;
+	width: 400px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+	margin: 0 auto;
+}
+.triangle {
+	display: block;
+	background: url("../images/triangle.png") no-repeat;
+	height: 131px;
+	width: 150px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+	margin: 20px auto 0 auto;
+}
+
+/* ----- TV on the Decline Bar graph ----- */
+.decline-wrapper {
+	display: block;
+	position: relative;
+	margin-top: 110px;
+}
+.bar-graph-wrapper{
+	text-align: center;
+}
+.bar-graph-wrapper .bar-graph{
+	color: #353535;
+	position: relative;
+	line-height: 23px;
+	margin-left: 5%;
+	width: 90%;
+}
+.bar-graph td{
+	text-align: center;
+	vertical-align: bottom;
+	width: 25%;
+}
+.bar-graph .bar-wrapper {
+    height: 360px;
+    min-width: 50px;
+    position: relative;
+	vertical-align: bottom;
+}
+.bar-graph .bar{
+	bottom: 0px;
+	height: 0;
+	left: 0px;
+	margin: 0px auto;
+	position: absolute;
+	right: 0px;
+	width: 75%;
+	background-color: #edd246;
+}
+.bar-graph .bar-wrapper .bar-number {
+    margin-top: -60px;
+    position: relative;
+    font-family: "Avenir-Black", arial;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ed3990;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 3px 0 3px;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 0;
+}
+.bar-labels{
+	color: #353535;
+	font-size: 14px;
+	font-family: "Avenir-Book", arial;
+}
+.bar-labels td{
+	padding-top: 17px;
+	opacity: 0;
+}
+.bar-graph .bar-wrapper .min-value {
+    position: relative;
+    font-family: "Avenir-Black", arial;
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* ------ TV & Digital Overlap ------ */
+.overlap-wrapper {
+	display: block;
+	position: relative;
+	margin-top: 80px;
+}
+.over-wrapper {
+	display: block;
+	position: relative;
+}
+.overlap-color {
+	display: block;
+	background: url("../images/overlap-color.png") no-repeat;
+	bottom: 0px;
+	height: 0;
+	width: 450px;
+	position: absolute;
+	background-position: center bottom;
+	background-size: cover;
+	z-index: 200;
+	left: 50%;
+	margin-left: -225px;
+}
+.overlap-solid {
+	display: block;
+	background: url("../images/overlap-solid.png") no-repeat;
+	height: 338px;
+	width: 450px;
+	background-position: center bottom;
+	z-index: 100;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+/* ======= Best in Show ======== */
+#best{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 700px;
+	text-align: center;
+	background-color: #fff;
+}
+.youtube-play{
+	width: 90px;
+	height: 64px;
+	opacity: 0.7;
+	position: relative;
+	top: 50%;
+	margin-top: -32px;
+	cursor: pointer;
+	z-index: 300;
+}
+.youtube-play1{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	cursor: pointer;
+	z-index: 300;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+.box{
+	padding: 0;
+	display: block;
+	position: relative;
+}
+
+.panel {
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    border: none;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
+}
+.panel .caption{
+	font-size: 16px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	color: #c6ceda;
+	margin-top: 30px;
+	font-family: "Avenir-Black", arial;
+}
+.panel .desc{
+	text-align: center;
+	font-size: 28px;
+	width: 80%;
+	position: absolute;
+	bottom: 10px;
+	left: 10%;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-family: "Avenir-Black", arial;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	 -webkit-transition: -webkit-transform .5s;
+	-moz-transition: -moz-transform .5s;
+	-o-transition: -o-transform .5s;
+	transition: transform .5s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.front {
+    z-index: 200;
+    background: #fff;
+    vertical-align: middle;
+}
+
+.back {
+    z-index: 100;
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);  
+    transform: rotateY(-180deg);  
+    background: #458ef4;
+    cursor: pointer;
+}
+
+.panel:hover .front {
+    z-index: 100;
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.panel:hover .back {
+    z-index: 200;   
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+/* ======= Eyes on New Fronts ======= */
+#fronts {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 500px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.fronts-content{
+	max-width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+}
+.fronts-content p {
+	color: #565961;
+	font-family: "Avenir-Book", arial;
+	font-size: 24px;
+	text-align: left;
+	line-height: 1.35;
+}
+
+/* ----- slide ----- */
+.carousel-inner .item{
+	z-index: 10;
+}
+.tooltip.top{
+	display: inline-block;
+	opacity: 1;
+	position: relative;
+	margin-bottom: 0;
+}
+.tooltip.top .tooltip-inner{
+	max-width: 100%;
+	margin: 0 auto;
+	background: #f4f5f7;
+	color: #565961;
+	font-family: "Avenir-Book",arial;
+	font-size: 24px;
+	line-height: 1.35;
+	text-align: left;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.tooltip.top .tooltip-arrow {
+    left: 30px;
+	border-width: 15px 10px 0px;
+    border-top-color: #f4f5f7;
+    position: relative;
+}
+.tooltip-portfolio{
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.tooltip-content{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	max-width: calc(100% - 80px);
+}
+.tooltip-content p:first-child{
+	font-family: "Avenir-Black", arial;
+	font-size: 24px;
+	line-height: 1;
+	padding-top: 10px; 
+	color: #353535;
+}
+.tooltip-content p:nth-child(2){
+	font-family: "Avenir-Black", arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #aebacb;
+}
+
+.fronts-value {
+	font-family: "Avenir-Black", arial;
+	font-size: 72px;
+	text-align: left;
+}
+.fronts-value sup {
+	font-size: 0.5em;
+	top: -0.7em;
+}
+.fronts-value-1 {
+	color: #ee9040;
+}
+.fronts-value-2 {
+	color: #ed3990;
+}
+
+/* ======= Turkish Airlines Case Study ====== */
+#casestudy{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 700px;
+	text-align: center;
+	background-color: #fff;
+}
+.goals_of_campaign {
+	background-color: #f4f5f7;
+	text-align: center;
+	padding: 60px 0;
+}
+.goals_of_campaign h4{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.goal .goal-number {
+	border: 3px solid #458ef3;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	vertical-align: middle;
+	color: #458ef3;
+	font-family: "Avenir-Black", arial;
+	font-size: 28px;
+	display: inline-block;
+	line-height: 60px;
+}
+.goal .goal-title {
+	font-family: "Avenir-Black", arial;
+	margin: 10px 0;
+	font-size: 24px;
+}
+.goal .text {
+	width: 100%;
+}
+
+.results {
+	text-align: center;
+}
+.results h4{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.result .result-value {
+	font-family: "Avenir-Black", arial;
+	font-size: 36px;
+	line-height: 1;
+	margin: 30px 0 0 0;
+}
+.result .text {
+	font-family: "Avenir-Book", arial;
+	text-transform: uppercase;
+	color: #93969b;
+	font-size: 16px;
+	font-weight: 900;
+}
+.mac-wrapper {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.mac-img {
+	position: absolute;
+	height: 70%;
+	width: 70%;
+	top: 13%;
+	left: 15%;
+	overflow: hidden;
+}
+
+/* ======= Get in touch ====== */
+#touch{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	text-align: center;
+	background-color: #fff;
+}
+#touch h4 {
+	text-align: center;
+}
+.btn-touch {
+	font-family: "Avenir-Black", arial;
+	font-size: 20px;
+	background-color: #458ef3;
+	border-radius: 5px;
+	color: #fff;
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	margin-top: 40px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+}
+.btn-touch:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #609ef3;
+}
+/* ======= Footer ========= */
+#footer{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	text-align: center;
+	position: relative;
+	background-color: #25282d;
+}
+
+.copyright{
+	bottom: 15px;
+	position: absolute;
+	color: #797a7b;
+	font-family: "Avenir-Book", arial;
+	font-size: 16px;
+	width: 100%;
+}
